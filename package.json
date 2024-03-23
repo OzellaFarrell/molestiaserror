@@ -1,0 +1,49 @@
+{
+  "name": "molestiaserror",
+  "version": "1.0.0",
+  "description": "Strongly-typed environment variables from .env & process.env",
+  "author": "AnsleyBraun",
+  "license": "MIT",
+  "keywords": [
+    "ea",
+    "dotenv",
+    "laboriosam",
+    "variables",
+    "config",
+    "asperiores"
+  ],
+  "bugs": {
+    "url": "https://github.com/OzellaFarrell/molestiaserror.git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OzellaFarrell/molestiaserror.git"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.js.map",
+    "index.d.ts",
+    "lib/*.js",
+    "lib/*.js.map",
+    "lib/*.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc --build tsconfig.dist.json",
+    "coverage": "jest --coverage",
+    "clean": "rm -rf index.{js,js.map,d.ts} ./lib/*.{js,js.map,d.ts} ./tests/*.{js,js.map,d.ts}",
+    "prepublishOnly": "npm run build",
+    "test": "jest"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^29.2.2",
+    "@types/node": "^18.11.9",
+    "coveralls": "^3.1.1",
+    "jest": "^29.3.0",
+    "prettier": "^2.7.1",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.8.4"
+  }
+}
